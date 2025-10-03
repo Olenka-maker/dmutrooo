@@ -1,0 +1,83 @@
+/* ваш стиль – без змін */
+h1 {
+  color: rgb(255, 81, 0);
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(88, 2, 145), rgb(49, 167, 207));
+  border-radius: 12px;
+  box-shadow: 2px 2px 3px 2px rgb(132, 0, 255);
+}
+
+body {
+  font-size: large;
+  color: rgb(19, 2, 255);
+  background-color: rgb(255, 0, 149);
+}
+
+button {
+  font-size: large;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  background-color: rgb(132, 0, 255);
+  box-shadow: 1px 1px 2px 1px rgb(132, 0, 255);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.answer-card {
+  background: #fff3;
+  border: 1px solid #ffffff44;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  user-select: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.answer-card:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 255, 0, 0.2); /* коли правильна відповідь */
+}
+
+.answer-card.correct {
+  outline: 3px solid #16c60c;
+}
+
+.answer-card.wrong {
+  outline: 3px solid #ff3b30;
+}
+
+.timerEl {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
